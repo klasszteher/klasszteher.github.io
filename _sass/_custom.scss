@@ -1,0 +1,71 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.section {
+    border-bottom: 3px solid;
+    border-bottom-color: black;
+    background-color: white;
+    padding: 80px;
+    h2 {
+        color: $brand-color;
+    } 
+}
+
+#disclaimer {
+    padding: 80px;
+    font-size: 120%;
+}
+
+footer {
+    color:$brand-color;
+    background-color: white;
+    padding-bottom: 100px;
+}
+
+body {
+    background-color: $background-color;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.card-body {
+    padding: 20px;
+    min-height: 260px;
+}
+
+.phone {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    font-size: 120%;
+}
+
+header a.phone {
+    font-size: 200%;
+}
+
+a.facebook {
+    font-size: 200%;
+    text-align: center;
+    max-width: 300px;
+}
+
+a.page-scroll {
+    transition: 0.5s;
+    -webkit-transition: all 0.5s ease;
+}
+
+@media (min-width: 768px) {
+    header .container {
+        min-width: 780px;
+        max-width: 970px;
+    }
+    .container {
+        max-width: 970px;
+    }
+}

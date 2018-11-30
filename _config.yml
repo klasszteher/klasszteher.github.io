@@ -1,0 +1,56 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Klassz Teher
+email: klasszteher@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  KlasszTeher költöztetés. Minden, ami teher.
+  
+  
+baseurl: # the subpath of your site, e.g. /blog
+url: "http://klasszteher.hu" # the base hostname & protocol for your site
+
+#sidebar
+default-image: truck.svg # If there is no featured image in a post then this image will be showed. Also on all pages this image will be showed. Use a 500x250 image.
+
+#footer
+
+built-by: 
+
+copyright:
+   name:
+   link:
+
+# Build settings
+markdown: kramdown
+permalink: /:title/
+paginate: 6
+paginate_path: /page:num/
+
+# Tracker
+analytics: 
+
+# Comments
+disqus: no
+disqus-shortname: 
+
+#social
+facebook: https://www.facebook.com/KlasszTeherKoltoztetes/
+quora: 
+twitter: 
+github: 
+email: klasszteher@gmail.com
+
+
+# Sass style
+sass:
+  style: compressed
+
+# Ruby Gems
+plugins: [jekyll-paginate, jekyll-seo-tag]
+
