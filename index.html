@@ -31,24 +31,21 @@ layout: default
 
     </div>
       
-    
-    <div class="container" id="services">
-      <!--<h1 style="text-align:center">Szolgáltatások</h1>-->
-      {% for post in paginator.posts %}
-      <section>
+    <section>
+      <div class="container" id="services">
+        <!--<h1 style="text-align:center">Szolgáltatások</h1>-->
+        {% for post in paginator.posts %}
+      
         <div class="row section" id ="{{ post.id | remove_first: '/' }}">
           <h2>{{ post.title }}</h2>
           <div>
             {{ post.content }}
           </div>
         </div>
-      </section>
-      {% endfor %}
-      <section>
+        {% endfor %}
         <div class="row" id="disclaimer">
           Minden költöztetés, szállítás <b>egyedi árajánlattal</b> bír, a fenti árak tájékoztató jellegűek.
         </div>
-      </section>
-    </div>
-
+      </div>
+    </section>
 </div>

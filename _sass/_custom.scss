@@ -5,18 +5,31 @@
     text-align: center;
 }
 
+section {
+    scroll-behavior: smooth;
+}
+
 .section {
     border-bottom: 3px solid;
     border-bottom-color: black;
-    background-color: white;
-    padding: 80px;
+    background-color: white;   
     h2 {
         color: $brand-color;
     } 
 }
 
+.section, #disclaimer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 20px;
+    padding-left: 20px;
+    @media (min-width: 768px) {
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+}
+
 #disclaimer {
-    padding: 80px;
     font-size: 120%;
 }
 
@@ -28,6 +41,10 @@ footer {
 
 body {
     background-color: $background-color;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -42,22 +59,21 @@ body {
 .phone {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 20px;
-    font-size: 120%;
+    @media (min-width: 768px) {
+        font-size: 120%;
+    }
 }
 
 header a.phone {
     font-size: 200%;
+    text-align: center;
+    max-width: 300px;
 }
 
 a.facebook {
     font-size: 200%;
     text-align: center;
     max-width: 300px;
-}
-
-a.page-scroll {
-    transition: 0.5s;
-    -webkit-transition: all 0.5s ease;
 }
 
 @media (min-width: 768px) {
@@ -68,4 +84,9 @@ a.page-scroll {
     .container {
         max-width: 970px;
     }
+}
+
+.price {
+    color: $brand-color;
+    font-weight: bold;
 }
