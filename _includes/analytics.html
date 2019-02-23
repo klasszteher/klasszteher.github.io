@@ -6,4 +6,22 @@
   gtag('js', new Date());
 
   gtag('config', '{{site.analytics}}');
+  // Google Ads: 765310712
+  gtag('config', 'AW-765310712');
+</script>
+<!-- Event snippet for Email conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion_email(url) {
+    var callback = function () {
+      if (typeof (url) != 'undefined') { window.location = url; }
+    };
+    gtag('event', 'conversion', { 'send_to': 'AW-765310712/ry4DCJ_Er5UBEPjt9uwC', 'event_callback': callback });
+    return false;
+  }
+</script>
+<!-- Event snippet for Hívás gombra kattintás conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> <script> function gtag_report_conversion_tel(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') { window.location = url; }
+  };
+  gtag('event', 'conversion', { 'send_to': 'AW-765310712/1Nz9CPH1opUBEPjt9uwC', 'event_callback': callback }); return false; }
 </script>
