@@ -33,7 +33,7 @@ paginate: 6
 paginate_path: /page:num/
 
 # Tracker
-analytics: 
+analytics: UA-135027812-1
 
 # Comments
 disqus: no
